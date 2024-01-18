@@ -11,6 +11,7 @@ line-height:1.5;
 font-weight:400;
 color:#434343;
 background:#FFF;
+
 }
 
 .container {
@@ -53,6 +54,9 @@ footer {
     background:#121212;
     padding:15px 0 15px 30px;
     margin:0 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 p{
     font-size: 18px;
@@ -80,14 +84,7 @@ textarea {width:100%;}
 aside {width:30%;}
 #main {width:65%;}
  textarea {width:100%;}
- footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    padding: auto;
-}
+
 }
 
 @media (max-width: 800px) and (min-width: 500px) {
@@ -95,25 +92,28 @@ aside {width:30%;}
 aside,
 #main {width:100%;}
  textarea {width:100%;}
- footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: auto;
-}
+
 }
 
 @media (max-width: 500px) {
-.container {width:90%;}
-aside,
-#main {width:100%;}
- textarea {width:100%;}
- footer {
-    position: fixed;
+.container {
+    
+width: 400px;
+}
+
+footer {
+  position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    padding: auto;
+    padding:15px 0 15px 30px;
+    margin:0px;
+  }
+
+aside,
+#main {
+width:100%;
+}
+ textarea {
+ width:100%;
 }
 }
